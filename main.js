@@ -22,7 +22,7 @@ function process(users){
         console.log('user first name', user.name.first)
 
         let li = document.createElement("li")
-        ul.appendChild(li);
+        ul.appendChild(li)
 
         let img = document.createElement("img")
         li.appendChild(img);
@@ -35,6 +35,6 @@ function process(users){
 
         nameDiv.addEventListener('click', function({
 
-        })
-    
+        }))
+    }
 }
