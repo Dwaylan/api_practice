@@ -77,6 +77,9 @@ let ul = document.getElementById("people")
     //  Creating an address element and appending it to the address div in the body
     let addressDiv = document.createElement("div")
     li.appendChild(addressDiv);
+
+    let profileAddress = `Address: ${user.location.street.number} ${user.location.street.name}, ${user.location.city} ${user.location.state} ${user.location.postcode}`
+    addressDiv.innerText.profileAddress
     })
 }
     
