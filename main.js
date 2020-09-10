@@ -65,7 +65,7 @@ let ul = document.getElementById("people")
     let nameDiv = document.createElement("div")
     li.appendChild(nameDiv);
 
-    let profileName = `Name: ${user.name.first} ${user.name.last}`
+    let profileName = `Name: ${user.name.first} ${user.name.last}`;
 
     // Now we access the inner text of the name div that we created and appended
     // and we're going to place our profileName variable in the inner text of all
@@ -78,8 +78,8 @@ let ul = document.getElementById("people")
     let addressDiv = document.createElement("div")
     li.appendChild(addressDiv);
 
-    let profileAddress = `Address: ${user.location.street.number} ${user.location.street.name}, ${user.location.city} ${user.location.state} ${user.location.postcode}`
-    addressDiv.innerText.profileAddress
+    let profileAddress = `Address: ${user.location.street.number} ${user.location.street.name}, ${user.location.city} ${user.location.state} ${user.location.postcode}`;
+    addressDiv.innerText = profileAddress
     })
 }
     
