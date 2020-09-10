@@ -55,9 +55,24 @@ let ul = document.getElementById("people")
     let img = document.createElement("img")
     li.appendChild(img);
 
+    // We created a new variable to hold the picture key. Remember the picture is 
+    // is being held in the user object so we have to use dot notation to access the
+    // actual picture itself. Then we have an option of 3 sizes
+    let profilePic = user.picture.large
+    img.src = profilePic
+
     //  Creating a list element and appending it to the name div in the body
     let nameDiv = document.createElement("div")
     li.appendChild(nameDiv);
+
+    let profileName = `Name: ${user.name.first} ${user.name.last}`
+
+    // Now we access the inner text of the name div that we created and appended
+    // and we're going to place our profileName variable in the inner text of all
+    // name div
+    nameDiv.innerText = profileName;
+
+    // ***Comprehension check. What is the purpose of back-tick notation?***
 
     //  Creating an address element and appending it to the address div in the body
     let addressDiv = document.createElement("div")
