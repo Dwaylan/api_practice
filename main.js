@@ -72,7 +72,8 @@ let ul = document.getElementById("people")
     // name div
     nameDiv.innerText = profileName;
 
-    // ***Comprehension check. What is the purpose of back-tick notation?***
+    // ***Comprehension check. What is the purpose of back-tick notation?
+    // We use the backtick for template literals***
 
     //  Creating an address element and appending it to the address div in the body
     let addressDiv = document.createElement("div")
